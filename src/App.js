@@ -1,20 +1,82 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+var assets = [
+  '/images/beijing.jpg',
+  '/images/chuangguanchenggong.jpg',
+  '/images/ditu.jpg',
+  '/images/guangrongbang.jpg',
+  '/images/henyihan.jpg',
+  '/images/tijiao_btn.png',
+  '/images/wenti.png',
+  '/images/xiayiti.png',
+  '/images/xuexineirong.png',
+  '/images/yaogao.png',
+  '/images/ziliao.png'
+]
+var totalAssets = assets.length
+
+const Progress = (props) => {
+  return (
+    <div className="app-loading-overlay">
+      <div className="app-loading">
+        <div className="app-loading-percent" style={{ width: props.percent + '%'}}>
+          {props.percent + '%'}
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      </div>
+    </div>
+    )
+}
+
+const Page1 = (props) => {
+  return (
+    <div className="page1">
+    page1
+    </div>
+    )
+}
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {  
+      percent: 0,
+      page: 0
+    }
+  }
+
+  componentDidMount() {
+    var img = new Image()
+    img.onload = this._loadImage
+    img.src = assets.shift()
+  }
+
+  render() {
+    var { page } = this.state
+    return (
+      <div className="app">
+        { page === 0 ? <Progress percent={(this.state.percent / totalAssets).toFixed(2) * 100} /> : null }
+        { page === 1 ? <Page1 /> : null }
       </div>
     );
+  }
+
+  _loadImage = (e) => {
+    this.setState((prevState) => {
+      return {
+        percent: prevState.percent + 1
+      }
+    })
+    if (assets.length) {
+      var img = new Image()
+      img.onload = this._loadImage
+      img.src = assets.shift()
+    }
+    else {
+      this.setState({
+        page: 1
+      })
+    }
   }
 }
 
