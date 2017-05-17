@@ -24,3 +24,7 @@
   bottom: 0;
   background-color: #333;
 }
+
+.app {
+  height: 100%;
+}

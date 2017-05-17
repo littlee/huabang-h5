@@ -1,0 +1,61 @@
+.page3 {
+  height: 100%;
+  background-image: url(/images/beijing.jpg);
+  background-size: 100% 100%;
+
+
+  &-form {
+    position: relative;
+    top: 150px;
+    width: percentage(544/640);
+    margin: 0 auto;
+
+    > img {
+      width: 100%;
+    }
+
+    > form {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 80%;
+    }
+
+    &-item {
+      &:before {
+        content: "";
+        display: table;
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+
+    &-label {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding-right: 15px;
+      color: #aaa;
+    }
+
+    &-control {
+      float: left;
+      width: 50%;
+
+      > input {
+        width: 100%;
+        border: none;
+        outline: 0;
+      }
+    }
+
+  }
+}
