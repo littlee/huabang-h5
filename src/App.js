@@ -5,18 +5,6 @@ import Page2 from './p/Page2'
 import Page3 from './p/Page3'
 
 var assets = [
-  '/images/kaishi.jpg',
-  '/images/beijing.jpg',
-  '/images/chuangguanchenggong.jpg',
-  '/images/ditu.jpg',
-  '/images/guangrongbang.jpg',
-  '/images/henyihan.jpg',
-  '/images/tijiao_btn.png',
-  '/images/wenti.png',
-  '/images/xiayiti.png',
-  '/images/xuexineirong.png',
-  '/images/yaogao.gif',
-  '/images/ziliao.png'
 ]
 var totalAssets = assets.length
 
@@ -52,7 +40,7 @@ class App extends Component {
     return (
       <div className="app">
         { page === 0 ? <Progress percent={(this.state.percent / totalAssets).toFixed(2) * 100} /> : null }
-        { page === 1 ? <Page1 /> : null }
+        { page === 1 ? <Page1 onClickStart={this._clickPage1Start} onClickRank={this._clickPage1Rank}/> : null }
         { page === 2 ? <Page2 /> : null }
         { page === 3 ? <Page3 /> : null }
       </div>
@@ -75,6 +63,18 @@ class App extends Component {
         page: 1
       })
     }
+  }
+
+  _clickPage1Start = () => {
+    this.setState({
+      page: 2
+    })
+  }
+
+  _clickPage1Rank = () => {
+    this.setState({
+      page: 8
+    })
   }
 }
 
