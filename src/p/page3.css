@@ -10,9 +10,15 @@
   left: 20%;
   right: 16%;
 }
+.page3-form-err {
+  color: red;
+  padding: 5px;
+  text-align: center;
+}
 .page3-form-item {
   padding: 10px 0;
   border-bottom: 1px dashed #bbb;
+  font-size: 18px;
 }
 .page3-form-item:before,
 .page3-form-item:after {
@@ -39,9 +45,7 @@
   outline: 0;
 }
 .page3-btn {
-  position: fixed;
-  z-index: 99;
-  top: 71.51106833%;
-  left: 31.71875%;
-  width: 37.03125%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }

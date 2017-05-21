@@ -3,6 +3,11 @@ import './App.css';
 import Page1 from './p/Page1'
 import Page2 from './p/Page2'
 import Page3 from './p/Page3'
+import Page4 from './p/Page4'
+import Page5 from './p/Page5'
+import Page6 from './p/Page6'
+import Page7 from './p/Page7'
+import Page8 from './p/Page8'
 
 var assets = [
 ]
@@ -25,7 +30,8 @@ class App extends Component {
     super(props)
     this.state = {  
       percent: 0,
-      page: 3
+      page: 2,
+      manStep: 6
     }
   }
 
@@ -41,8 +47,13 @@ class App extends Component {
       <div className="app">
         { page === 0 ? <Progress percent={(this.state.percent / totalAssets).toFixed(2) * 100} /> : null }
         { page === 1 ? <Page1 onClickStart={this._clickPage1Start} onClickRank={this._clickPage1Rank}/> : null }
-        { page === 2 ? <Page2 /> : null }
+        { page === 2 ? <Page2 step={this.state.manStep}/> : null }
         { page === 3 ? <Page3 /> : null }
+        { page === 4 ? <Page4 /> : null }
+        { page === 5 ? <Page5 /> : null }
+        { page === 6 ? <Page6 /> : null }
+        { page === 7 ? <Page7 /> : null }
+        { page === 8 ? <Page8 /> : null }
       </div>
     );
   }

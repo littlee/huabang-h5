@@ -11,6 +11,12 @@
     left: 20%;
     right: 16%;
 
+    &-err {
+      color: red;
+      padding: 5px;
+      text-align: center;
+    }
+
     &-item {
       &:before,
       &:after {
@@ -23,6 +29,7 @@
       }
       padding: 10px 0;
       border-bottom: 1px dashed #bbb;
+      font-size: 18px;
     }
 
     &-label {
@@ -46,10 +53,8 @@
   }
 
   &-btn {
-    position: fixed;
-    z-index: 99;
-    top: percentage(743 / 1039);
-    left: percentage(203 / 640);
-    width: percentage(237 / 640)
+    width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }

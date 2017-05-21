@@ -1,0 +1,90 @@
+.page4 {
+  height: 100%;
+  background-image: url(/images/4.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.page4-month-check {
+  color: white;
+  position: absolute;
+  top: 43.31087584%;
+  left: 27.65625%;
+}
+.page4-check-btn {
+  border: none;
+  background-color: #fff6b8;
+  color: #eb6901;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  position: absolute;
+  top: 42.92589028%;
+  left: 66.875%;
+}
+.page4-total {
+  color: #eb6901;
+  position: absolute;
+  top: 49.08565929%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+.page4-balls {
+  position: absolute;
+  top: 52.93551492%;
+  width: 70%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.page4-balls:before,
+.page4-balls:after {
+  content: "";
+  display: table;
+}
+.page4-balls:after {
+  clear: both;
+}
+.page4-ball {
+  display: block;
+  width: 12.5%;
+  float: left;
+  padding: 5px 0;
+}
+.page4-ball-item {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page4-ball-item.check:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(/images/check.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.page4-ball-item.blue {
+  background-image: url(/images/ball_blue.png);
+}
+.page4-ball-item.red {
+  background-image: url(/images/ball_red.png);
+}
+.page4-ball-item.green {
+  background-image: url(/images/ball_green.png);
+}
+.page4-ball-item.purple {
+  background-image: url(/images/ball_purple.png);
+}
+.page4-ball-item.yellow {
+  background-image: url(/images/ball_yellow.png);
+}

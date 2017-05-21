@@ -11,4 +11,109 @@
   top: 0;
   left: 0;
   width: 25%;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.page2-man.step-1 {
+  animation-name: s1;
+}
+.page2-man.step-2 {
+  animation-name: s2;
+}
+.page2-man.step-3 {
+  animation-name: s3;
+}
+.page2-man.step-4 {
+  animation-name: s4;
+}
+.page2-man.step-5 {
+  animation-name: s5;
+}
+.page2-man.step-6 {
+  animation-name: s6;
+}
+@keyframes s1 {
+  from {
+    top: 74.10972089%;
+    left: 55.15625%;
+  }
+  to {
+    top: 76.99711261%;
+    left: 10.9375%;
+  }
+}
+@keyframes s2 {
+  from {
+    top: 76.99711261%;
+    left: 10.9375%;
+  }
+  20% {
+    top: 76.99711261%;
+    left: 4.6875%;
+  }
+  80% {
+    top: 53.89797883%;
+    left: 7.8125%;
+  }
+  to {
+    top: 53.89797883%;
+    left: 23.4375%;
+  }
+}
+@keyframes s3 {
+  from {
+    top: 53.89797883%;
+    left: 23.4375%;
+  }
+  60% {
+    top: 55.82290664%;
+    left: 62.5%;
+  }
+  to {
+    top: 43.31087584%;
+    left: 62.5%;
+  }
+}
+@keyframes s4 {
+  from {
+    top: 43.31087584%;
+    left: 62.5%;
+  }
+  40% {
+    top: 28.87391723%;
+    left: 43.75%;
+  }
+  90% {
+    top: 33.68623677%;
+    left: 0.15625%;
+  }
+  to {
+    top: 28.87391723%;
+    left: 0.15625%;
+  }
+}
+@keyframes s5 {
+  from {
+    top: 28.87391723%;
+    left: 0.15625%;
+  }
+  90% {
+    top: 7.69971126%;
+    left: 0.15625%;
+  }
+  to {
+    top: 7.69971126%;
+    left: 7.8125%;
+  }
+}
+@keyframes s6 {
+  from {
+    top: 7.69971126%;
+    left: 7.8125%;
+  }
+  to {
+    top: 4.81231954%;
+    left: 54.6875%;
+  }
 }

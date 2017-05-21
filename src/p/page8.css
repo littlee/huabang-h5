@@ -1,0 +1,53 @@
+.page8 {
+  height: 100%;
+  background-image: url(/images/8.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.page8-ranks {
+  width: 95%;
+  margin: 0 auto;
+}
+.page8-rank {
+  background-color: #211c32;
+  color: white;
+  display: table;
+  width: 100%;
+}
+.page8-rank-num,
+.page8-rank-img,
+.page8-rank-name,
+.page8-rank-progress,
+.page8-rank-photos {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.page8-rank-num {
+  padding: 0 5px;
+}
+.page8-rank-img {
+  padding: 5px 0;
+}
+.page8-rank-img > img {
+  border-radius: 50%;
+}
+.page8-rank-photos > a {
+  color: white;
+  text-decoration: none;
+}
+.page8-pb {
+  margin-right: 3px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100px;
+  height: 1em;
+  background-color: #3a3055;
+  border-radius: 20px;
+}
+.page8-pb-inner {
+  background-image: url(/images/progress.png);
+  height: 1em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

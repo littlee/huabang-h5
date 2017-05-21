@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "classname-utils": "^1.0.1",
+    "form_to_object": "^1.0.8",
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "walk": "^2.3.9"

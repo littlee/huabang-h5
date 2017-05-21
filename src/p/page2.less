@@ -11,5 +11,129 @@
     top: 0;
     left: 0;
     width: 25%;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+    &.step-1 {
+      animation-name: s1;
+    }
+    &.step-2 {
+      animation-name: s2;
+    }
+    &.step-3 {
+      animation-name: s3;
+    }
+    &.step-4 {
+      animation-name: s4;
+    }
+    &.step-5 {
+      animation-name: s5;
+    }
+    &.step-6 {
+      animation-name: s6;
+    }
+  }
+}
+
+@keyframes s1 {
+  from {
+    top: percentage(770/1039);
+    left: percentage(353/640);
+  }
+
+  to {
+    top: percentage(800/1039);
+    left: percentage(70/640);
+  }
+}
+
+@keyframes s2 {
+  from {
+    top: percentage(800/1039);
+    left: percentage(70/640);
+  }
+
+  20% {
+    top: percentage(800/1039);
+    left: percentage(30/640);
+  }
+
+  80% {
+    top: percentage(560/1039);
+    left: percentage(50/640);
+  }
+
+  to {
+    top: percentage(560/1039);
+    left: percentage(150/640);
+  }
+}
+
+@keyframes s3 {
+  from {
+    top: percentage(560/1039);
+    left: percentage(150/640);
+  }
+
+  60% {
+    top: percentage(580/1039);
+    left: percentage(400/640);
+  }
+
+  to {
+    top: percentage(450/1039);
+    left: percentage(400/640);
+  }
+}
+
+@keyframes s4 {
+  from {
+    top: percentage(450/1039);
+    left: percentage(400/640);
+  }
+
+  40% {
+    top: percentage(300/1039);
+    left: percentage(280/640);
+  }
+
+  90% {
+    top: percentage(350/1039);
+    left: percentage(1/640);
+  }
+
+  to {
+    top: percentage(300/1039);
+    left: percentage(1/640);
+  }
+}
+
+@keyframes s5 {
+  from {
+    top: percentage(300/1039);
+    left: percentage(1/640);
+  }
+
+  90% {
+    top: percentage(80/1039);
+    left: percentage(1/640);
+  }
+
+  to {
+    top: percentage(80/1039);
+    left: percentage(50/640);
+  }
+}
+
+@keyframes s6 {
+  from {
+    top: percentage(80/1039);
+    left: percentage(50/640);
+  }
+
+  to {
+    top: percentage(50/1039);
+    left: percentage(350/640);
   }
 }

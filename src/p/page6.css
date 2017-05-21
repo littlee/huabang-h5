@@ -1,0 +1,37 @@
+.page6 {
+  height: 100%;
+  background-image: url(/images/6.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.page6-content {
+  position: absolute;
+  top: 40.42348412%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+}
+.page6-question {
+  width: 44%;
+  min-height: 110px;
+  padding-left: 20px;
+}
+.page6-options {
+  width: 90%;
+  margin: 0 auto;
+}
+.page6-option {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.page6-option.check {
+  background-image: url(/images/xuanzhong.png);
+  background-size: 100%;
+}
+.page6-next {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}

@@ -1,0 +1,44 @@
+.page6 {
+  height: 100%;
+  background-image: url(/images/6.jpg);
+  background-size: 100% 100%;
+  position: relative;
+
+  &-content {
+    position: absolute;
+    top: percentage(420/1039);
+    // background-color: red;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  &-question {
+    width: 44%;
+    min-height: 110px;
+    padding-left: 20px;
+  }
+
+  &-options {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &-option {
+    padding: 5px;
+    margin-bottom: 10px;
+
+    &.check {
+      background-image: url(/images/xuanzhong.png);
+      background-size: 100%;
+    }
+  }
+
+  &-next {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
